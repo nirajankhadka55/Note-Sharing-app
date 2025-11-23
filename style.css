@@ -1,0 +1,184 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fa;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* Center container */
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ------------------------------
+   Cards / Boxes
+------------------------------ */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+/* ------------------------------
+   Header / Navigation
+------------------------------ */
+.topbar, .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.nav a,
+.link-btn {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.link-btn {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------------------------------
+   Forms
+------------------------------ */
+.form-row {
+  margin-bottom: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+button.primary {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  box-shadow: 0px 6px 16px rgba(60, 99, 245, 0.25);
+}
+
+/* Alerts */
+.alert {
+  background: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  color: #92400e;
+  font-size: 14px;
+}
+
+/* ------------------------------
+   Notes Grid
+------------------------------ */
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 16px;
+}
+
+.note-card {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.07);
+}
+
+.note-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #eef2ff;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #4338ca;
+}
+
+/* Small text */
+.small {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Floating Add Button */
+.fab {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 10px 20px rgba(5, 150, 220, 0.3);
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #f3f4f6;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #4b5563;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.upload-btn:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
